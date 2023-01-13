@@ -1,0 +1,21 @@
+.nav-menu__search-item {
+  padding-inline: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+
+  &-input {
+    font-family: "Montserrat-Bold";
+    letter-spacing: 0.125rem;
+    font-size: 0.75rem;
+    line-height: 4.0625rem;
+    border: 0;
+    color: #bbbdbf;
+    width: 90%;
+  }
+
+  &-icon {
+    font-size: 0.75rem;
+  }
+}

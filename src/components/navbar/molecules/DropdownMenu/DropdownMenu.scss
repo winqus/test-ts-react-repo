@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.nav-menu {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    max-width: $max-content-width;
+    overflow-y: auto;
+    max-height: calc(100% - $nav-bar-height);
+    background-color: $primary-color;
+    z-index: 1;
+    left: 0;
+
+    &--hide-vertical {
+      transition: all 450ms ease-in-out;
+      opacity: 0;
+      top: -100%;
+      pointer-events: none;
+    }
+
+    &--show-vertical {
+      transition: all 450ms ease-in-out;
+      top: $nav-bar-height;
+    }
+
+    &--hide-horizontal {
+      transition: all 450ms ease-in-out;
+      opacity: 0;
+      left: -100%;
+      top: $nav-bar-height;
+      pointer-events: none;
+    }
+
+    &--show-horizontal {
+      transition: all 450ms ease-in-out;
+      left: 0;
+      top: $nav-bar-height;
+    }
+  }
+}

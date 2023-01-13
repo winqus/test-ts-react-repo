@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+.nav-menu {
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid $icon-border-color-light;
+    width: 2.6875rem;
+    height: 2.6875rem;
+    color: $icon-color-dark;
+    font-size: 0.75rem;
+
+    &:hover {
+      border: 0.0625rem solid $icon-border-color-dark;
+      color: $primary-color;
+      background-color: $icon-color-dark;
+    }
+  }
+}

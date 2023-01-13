@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.nav-menu {
+  min-height: $nav-bar-height;
+
+  &__header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background-color: $primary-color;
+
+    display: flex;
+    min-height: $nav-bar-height;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding-bottom: 1.25rem;
+  }
+
+  &__title {
+    font-family: "Pacifico";
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5625rem;
+    letter-spacing: 0.1875rem;
+    font-weight: 400;
+  }
+
+  &__icon-group {
+    display: flex;
+    justify-content: center;
+    align-content: center
+  }
+
+  &__vertical-line {
+    border-left: 0.0625rem solid $secondary-color;
+    height: 0.9375rem;
+    margin-inline: 0.875rem;
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../variables.scss';
+
+.nav-menu {
+  &__cart-dropdown-item {
+    font-family: "Montserrat-Bold";
+    font-size: 0.75rem;
+    color: $text-color-dark;
+    letter-spacing: 0.0625rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &--non-selectable {
+      &:hover {
+        color: $text-color-dark;
+      }
+    }
+  }
+
+  &__cart-dropdown {
+    position: relative;
+  }
+
+  &__cart-dropdown-content {
+    background-color: $primary-color;
+    display: none;
+    position: absolute;
+    top: 3.1875rem;
+    right: -1rem;
+    overflow: hidden;
+    z-index: 1;
+    width: 7.2rem;
+
+    &--show {
+      display: inherit;
+    }
+  }
+
+  &__cart-dropdown-item {
+    font-family: "Montserrat-Bold";
+    font-size: 0.75rem;
+    color: $text-color-dark;
+    letter-spacing: 0.0625rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &--non-selectable {
+      &:hover {
+        color: $text-color-dark;
+      }
+    }
+  }
+
+  &__btnText {
+    font-family: "Montserrat-Bold";
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    align-self: flex-end;
+    margin-left: 0.6875rem;
+  }
+}

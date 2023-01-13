@@ -1,0 +1,87 @@
+@import '../../variables.scss';
+
+.nav-menu__icon-hamburger {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  background-color: $icon-color-dark;
+  width: 1.125rem;
+  height: 0.125rem;
+  border-radius: 0.0625rem;
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: $icon-color-dark;
+    width: 1.125rem;
+    height: 0.125rem;
+    position: absolute;
+    border-radius: 0.0625rem;
+    display: block;
+    left: -0.0625rem;
+    top: -0.0625rem;
+  }
+
+  &::before {
+    transform: translateY(-0.3125rem);
+  }
+
+  &::after {
+    transform: translateY(0.3125rem);
+  }
+}
+
+.icon-hamburger {
+  $bar-distance-between: 0.4rem;
+  @mixin SingleBarProperties {
+    width: 1.125rem;
+    height: 0.1rem;
+    background-color: $icon-color-dark;
+    position: absolute;
+    border-radius: 0.0625rem;
+  }
+
+  width: 1.125rem;
+  height: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bars {
+    @include SingleBarProperties();
+    transition: all 450ms ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      @include SingleBarProperties();
+      margin-left: -0.5625rem;
+      transform: rotateZ(0deg);
+    }
+
+    &::before {
+      transform: translateY(-$bar-distance-between);
+      transition: all 450ms ease-in-out;
+    }
+
+    &::after {
+      transform: translateY($bar-distance-between);
+      transition: all 450ms ease-in-out;
+    }
+  }
+
+  &--active > .icon-hamburger__bars {
+    transition: all 450ms ease-in-out;
+    background-color: #ffffff00;
+    &::before {
+      transform: rotateZ(45deg);
+      transition: all 450ms ease-in-out;
+    }
+    &::after {
+      transform: rotateZ(-45deg);
+      transition: all 450ms ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "title": "Renome",
+    "cartCount": 2,
+    "cartValue": "$44.50",
+    "cartDropdownItems": [
+      {
+        "name": "View Cart",
+        "href": "#cart"
+      },
+      {
+        "name": "Checkout",
+        "href": "#checkout"
+      }
+    ],
+    "menu": [
+      {
+        "title": "Search",
+        "inputValue": "",
+        "isSearchBar": true
+      },
+      {
+        "title": "Home",
+        "href": "#home"
+      },
+      {
+        "title": "About",
+        "href": "#about"
+      },
+      {
+        "title": "Menu",
+        "href": "#menu"
+      },
+      {
+        "title": "Reservations",
+        "href": "#reservations"
+      },
+      {
+        "title": "Blog",
+        "href": "#blog"
+      },
+      {
+        "title": "Features",
+        "href": "#features",
+        "isSubmenu": true,
+        "submenuItems": [
+          {
+            "title": "One page",
+            "href": "#onepage"
+          },
+          {
+            "title": "Portfolio",
+            "href": "#portfolio"
+          },
+          {
+            "title": "Shortcodes",
+            "href": "#shortcodes"
+          }
+        ]
+      },
+      {
+        "title": "Shop",
+        "href": "#shop"
+      },
+      {
+        "title": "Contact",
+        "href": "#contact"
+      }
+    ]
+  }
+}
